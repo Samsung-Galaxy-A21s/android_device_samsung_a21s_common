@@ -8,7 +8,6 @@
 
 # Camera
 /dev/m2m1shot_scaler0                                                                                     u:object_r:m2m1shot_device:s0
-/dev/caminfo                                                                                              u:object_r:caminfo_device:s0
 /sys/devices/virtual/camera/flash/rear_flash                                                              u:object_r:sysfs_camera_writable:s0
 /sys/devices/virtual/camera/rear/fw_update                                                                u:object_r:sysfs_camera_writable:s0
 /sys/devices/virtual/camera/rear/ssrm_camera_info                                                         u:object_r:sysfs_camera_writable:s0
