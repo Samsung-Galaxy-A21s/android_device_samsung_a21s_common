@@ -1,5 +1,7 @@
 ## Adoptable Storage
-ro.crypto.volume.options=aes-256-xts
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.volume.options=aes-256-xts:aes-256-cts:v2
 
 ## Audio
 audio.offload.min.duration.secs=30
@@ -46,6 +48,11 @@ ro.incremental.enable=true
 
 ## Power HAL
 vendor.powerhal.disp.idle_support=false
+
+## Metadata Encryption
+ro.crypto.dm_default_key.options_format.version=2
+# Call deleteAllKeys if vold detects a factory reset
+ro.crypto.metadata_init_delete_all_keys.enabled=true
 
 ## Samsung specific
 # Set csc support in OMX
