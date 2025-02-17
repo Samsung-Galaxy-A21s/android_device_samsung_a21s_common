@@ -19,6 +19,9 @@ COMMON_PATH := device/samsung/a21s-common
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/a21s-common/a21s-common-vendor.mk)
 
+# Enable project quotas and casefolding for emulated storage without sdcardfs
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 PRODUCT_CHARACTERISTICS := phone
 
 # Audio
